@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "lib": ["deno.ns", "dom"]
+  },
+  "fmt": { "singleQuote": true, "semiColons": false },
+  "imports": {
+    "@std/csv": "jsr:@std/csv@^1.0.3",
+    "@std/datetime": "jsr:@std/datetime@^0.225.2"
+  },
+  "tasks": {
+    "run": "deno -ENRW --allow-ffi index.ts"
+  }
+}
