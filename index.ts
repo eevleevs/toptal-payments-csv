@@ -1,8 +1,8 @@
 import { parse } from '@std/csv'
 import { writeText } from 'https://deno.land/x/clippy@v1.0.0/mod.ts'
 
-writeText(
-  parse(Deno.readTextFileSync(Deno.args[0]))
+export const format = (csv: string): string =>
+  parse(csv)
     .map((v) => v.slice(1, 3))
     .filter(([amount, date]) => amount && date && amount.startsWith('$'))
     .map(([amount, date]) => ({
@@ -15,5 +15,9 @@ writeText(
         amount,
       ].join('\t')
     )
-    .join('\n'),
-)
+    .join('\n')
+
+if (import.meta.main) {
+  writeText(format(Deno.readTextFileSync(Deno.args[0])))
+  console.log('Formatted table copied to clipboard')
+}
