@@ -1,7 +1,4 @@
 {
-  "compilerOptions": {
-    "lib": ["deno.ns", "dom"]
-  },
   "fmt": { "singleQuote": true, "semiColons": false },
   "imports": {
     "@std/csv": "jsr:@std/csv@^1.0.3"
