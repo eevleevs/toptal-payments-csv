@@ -1,33 +1,19 @@
 {
   "version": "4",
   "specifiers": {
-    "jsr:@std/bytes@^1.0.2": "1.0.2",
     "jsr:@std/csv@^1.0.3": "1.0.3",
-    "jsr:@std/datetime@~0.225.2": "0.225.2",
-    "jsr:@std/streams@^1.0.4": "1.0.7"
+    "jsr:@std/streams@^1.0.4": "1.0.9"
   },
   "jsr": {
-    "@std/bytes@1.0.2": {
-      "integrity": "fbdee322bbd8c599a6af186a1603b3355e59a5fb1baa139f8f4c3c9a1b3e3d57"
-    },
     "@std/csv@1.0.3": {
       "integrity": "623acf0dcb88d62ba727c3611ad005df7f109ede8cac833e3986f540744562e5",
       "dependencies": [
         "jsr:@std/streams"
       ]
     },
-    "@std/datetime@0.225.2": {
-      "integrity": "45f0100554a912cd65f48089ef0a33aa1eb6ea21f08090840b539ab582827eaa"
-    },
-    "@std/streams@1.0.7": {
-      "integrity": "1a93917ca0c58c01b2bfb93647189229b1702677f169b6fb61ad6241cd2e499b",
-      "dependencies": [
-        "jsr:@std/bytes"
-      ]
+    "@std/streams@1.0.9": {
+      "integrity": "a9d26b1988cdd7aa7b1f4b51e1c36c1557f3f252880fa6cc5b9f37078b1a5035"
     }
-  },
-  "redirects": {
-    "https://deno.land/x/clipboard/mod.ts": "https://deno.land/x/clipboard@v0.0.3/mod.ts"
   },
   "remote": {
     "https://deno.land/std@0.176.0/_util/asserts.ts": "178dfc49a464aee693a7e285567b3d0b555dc805ff490505a8aae34f9cfb1462",
@@ -159,7 +145,6 @@
     "https://deno.land/std@0.205.0/streams/write_all.ts": "4cdd36256f892fe7aead46338054f6ea813a63765e87bda4c60e8c5a57d1c5c1",
     "https://deno.land/std@0.205.0/streams/writer_from_stream_writer.ts": "7188ce589d6179693b488b478c05137d4d15b93735ca26ec01e6e44aed8cb0c6",
     "https://deno.land/std@0.205.0/streams/zip_readable_streams.ts": "721c5bce8862c8225e60995b2d61c7b1b1d5b5178b60d303a01f453d5c26bb62",
-    "https://deno.land/x/clipboard@v0.0.3/mod.ts": "5b68fe3b710b852de5273c135fc3c11b2b4050577401ee994161380bd8cab219",
     "https://deno.land/x/clippy@v1.0.0/bindings/bindings.ts": "dcf0e42f34ded2991ee9c66ac1c93b3d5bfc908b34ca6fe73c556b6074d91bf6",
     "https://deno.land/x/clippy@v1.0.0/clippy.ts": "3afe6955b74f36039bfd4f50fa54444f49a17e41c7a33f73055a55cbb18e6ba7",
     "https://deno.land/x/clippy@v1.0.0/clippy_deprecated.ts": "6ffdab8cd29f4d1dc285d4c76812eb475697bb2f87207a3c51a017b429ab6124",
@@ -179,8 +164,7 @@
   },
   "workspace": {
     "dependencies": [
-      "jsr:@std/csv@^1.0.3",
-      "jsr:@std/datetime@~0.225.2"
+      "jsr:@std/csv@^1.0.3"
     ]
   }
 }

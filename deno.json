@@ -4,10 +4,9 @@
   },
   "fmt": { "singleQuote": true, "semiColons": false },
   "imports": {
-    "@std/csv": "jsr:@std/csv@^1.0.3",
-    "@std/datetime": "jsr:@std/datetime@^0.225.2"
+    "@std/csv": "jsr:@std/csv@^1.0.3"
   },
   "tasks": {
-    "run": "deno -ENRW --allow-ffi index.ts"
+    "run": "deno -ER --allow-ffi index.ts"
   }
 }
